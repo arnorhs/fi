@@ -112,7 +112,7 @@ The library is distributed as an npm module:
 
 If you want to use this in the browser you can use [Browserify](https://github.com/substack/node-browserify) for all your npm needs.
 
-I also plan to make a client side ready version, hit me up with a github issue if you're interested in seeing that happend sooner.
+I also plan to make a client side ready version, hit me up with a github issue if you're interested in seeing that happen sooner.
 
 ### Contributions:
 

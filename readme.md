@@ -100,9 +100,9 @@ var myVar = sw("Rainbow", [
 
 ### But.. WHY?!
 
-1) Becuase somebody had to
-2) Functions are first class citizens in javascript, so why not make use of that
-3) It could potentially lead to some interesting use cases
+1. Becuase somebody had to
+2. Functions are first class citizens in javascript, so why not make use of that
+3. It could potentially lead to some interesting use cases
 
 ### Installation
 

@@ -38,7 +38,7 @@ var myif = fi(false, "flower puppy").elsfi(false, "human skin");
 // do some other stuff, and add to the chain:
 var myVar = myif.els("crapware").ret();
 
-// myVar is "human skin"
+// myVar is "crapware"
 ```
 
 *Wait, this is not functional enough!*

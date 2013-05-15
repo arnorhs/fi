@@ -1,0 +1,26 @@
+{
+  "name": "fi",
+  "version": "0.0.1",
+  "description": "Ternary operator wrapped in a module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arnorhs/fi.git"
+  },
+  "keywords": [
+    "ternary",
+    "operator",
+    "callback"
+  ],
+  "devDependencies": {
+    "mocha": "1.9.x"
+  },
+  "author": "Arnor Heidar Sigurdsson <arnorhs@gmail.com> (http://arnorhs.com)",
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "gitHead": "b3f280453889e5889e6261ce2cb408cb254ee298",
+  "dependencies": {}
+}

@@ -1,7 +1,7 @@
 {
   "name": "fi",
-  "version": "0.0.1",
-  "description": "Ternary operator wrapped in a module",
+  "version": "0.0.2",
+  "description": "Javascript library for writing, chaining and using conditional statements in a functional way",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js"
@@ -21,6 +21,5 @@
   "author": "Arnor Heidar Sigurdsson <arnorhs@gmail.com> (http://arnorhs.com)",
   "license": "MIT",
   "readmeFilename": "readme.md",
-  "gitHead": "b3f280453889e5889e6261ce2cb408cb254ee298",
   "dependencies": {}
 }

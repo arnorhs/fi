@@ -104,6 +104,16 @@ var myVar = sw("Rainbow", [
 2) Functions are first class citizens in javascript, so why not make use of that
 3) It could potentially lead to some interesting use cases
 
+### Installation
+
+The library is distributed as an npm module:
+
+    npm install fi
+
+If you want to use this in the browser you can use [Browserify](https://github.com/substack/node-browserify) for all your npm needs.
+
+I also plan to make a client side ready version, hit me up with a github issue if you're interested in seeing that happend sooner.
+
 ### Contributions:
 
 This library is pretty fresh and any pull requests or feature requests are welcome.

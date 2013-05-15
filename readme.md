@@ -64,7 +64,7 @@ var myVar = myif.els("crapware").ret();
 Ok, how about: any value passed into any fi conditional can be either a function, or a value
 
 ```javascript
-var myVar = fi(function() { return 1 > 0; },
+var myVar = fi(function() { return 1 < 0; },
               function() { return 300 / 0; }).
             els(
               function() { return 1337/7; }).ret();

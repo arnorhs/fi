@@ -44,11 +44,8 @@ statement.prototype.value = statement.prototype.ret = function() {
     }
 }
 
-function sw(cond, obj) {
-    if (Array.isArray(obj)) {
-        return arrSw(cond, obj);
-    }
-    return objSw(cond, obj);
+function sw(cond, arr) {
+    return arrSw(cond, Array.isArray(arr) ? arr : objSwitchToArray(arr));
 }
 
 function arrSw(cond, arr) {
@@ -63,15 +60,25 @@ function arrSw(cond, arr) {
     return ternary(l % 2, arr[l - 1]).ret();
 }
 
-function objSw(cond, obj) {
+function objSwitchToArray(obj) {
     if (Object.keys(obj).length === 0) {
         return;
     }
-    var ret = retOrCall(obj[cond]);
-    if (typeof ret === 'undefined') {
-        ret = retOrCall(obj['default'])
+    var arr = [],
+        def;
+    for (var k in obj) {
+        if (obj.hasOwnProperty(k)) {
+            if (k === 'default') {
+                def = obj[k];
+            } else {
+                arr.push(k, obj[k]);
+            }
+        }
     }
-    return ret;
+    if (def) {
+        arr.push(def);
+    }
+    return arr;
 }
 
 function retOrCall(v) {

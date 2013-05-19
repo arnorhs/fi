@@ -13,7 +13,7 @@ describe('ternary', function() {
             v2 = function() { return 'v2'; },
             expected = 'v2';
         it('should return the expected value', function() {
-            var ret = ternary(cond,v1,v2);
+            var ret = ternary(cond,v1,v2).ret();
             assert(ret === expected, ex(expected, ret));
         });
     });
@@ -23,7 +23,7 @@ describe('ternary', function() {
             v2 = 'v2',
             expected = 'v2';
         it('should return the expected value', function() {
-            var ret = ternary(cond,v1,v2);
+            var ret = ternary(cond,v1,v2).ret();
             assert(ret === expected, ex(expected, ret));
         });
     });

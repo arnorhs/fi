@@ -6,8 +6,16 @@ function fi(cond, val) {
 fi.ternary = ternary;
 fi.sw = fi.swi = sw;
 
+function Ternary(cond, a, b) {
+    this.cond = cond;
+    this.a = a;
+    this.b = b;
+}
+Ternary.prototype.ret = function() {
+    return retOrCall(this.cond) ? retOrCall(this.a) : retOrCall(this.b);
+}
 function ternary(cond, a, b) {
-    return retOrCall(cond) ? retOrCall(a) : retOrCall(b);
+    return new Ternary(cond, a, b);
 }
 
 function statement(cond, val) {
@@ -52,7 +60,7 @@ function arrSw(val, arr) {
         }
     }
     // if the last argument is alone, it's considered the default:
-    return ternary(l % 2, arr[l - 1]);
+    return ternary(l % 2, arr[l - 1]).ret();
 }
 
 function objSw(val, obj) {

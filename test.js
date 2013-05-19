@@ -39,19 +39,19 @@ describe('switch', function() {
             ];
 
             it('should return "key 1"', function() {
-                var ret = sw('k1', arr);
+                var ret = sw('k1', arr).ret();
                 var expected = 'key 1';
                 assert(ret === expected, ex(expected, ret));
             });
 
             it('should return "key 2"', function() {
-                var ret = sw('k2', arr);
+                var ret = sw('k2', arr).ret();
                 var expected = 'key 2';
                 assert(ret === expected, ex(expected, ret));
             });
 
             it('should return "default value"', function() {
-                var ret = sw('asdf', arr);
+                var ret = sw('asdf', arr).ret();
                 var expected = 'default value';
                 assert(ret === expected, ex(expected, ret));
             });
@@ -71,19 +71,19 @@ describe('switch', function() {
             ];
 
             it('should return "key 1"', function() {
-                var ret = sw('k1', arr);
+                var ret = sw('k1', arr).ret();
                 var expected = 'key 1';
                 assert(ret === expected, ex(expected, ret));
             });
 
             it('should return "key 2"', function() {
-                var ret = sw('k2', arr);
+                var ret = sw('k2', arr).ret();
                 var expected = 'key 2';
                 assert(ret === expected, ex(expected, ret));
             });
 
             it('should return "default value"', function() {
-                var ret = sw('asdf', arr);
+                var ret = sw('asdf', arr).ret();
                 var expected = 'default value';
                 assert(ret === expected, ex(expected, ret));
             });

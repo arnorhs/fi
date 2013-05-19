@@ -3,7 +3,7 @@
 With fi you can ignore the language constructs and write all your conditional logic in a functional way.
 
 ```javascript
-var sw = require('fi');
+var fi = require('fi');
 
 var myVar = fi(false, "The dragon").
             elsfi(function() { return 1==2; }, function() { return "Vampire"; }).
@@ -81,7 +81,7 @@ get executed.
 Ternary operator:
 
 ```javascript
-var sw = require('fi').ternary;
+var ternary = require('fi').ternary;
 
 var myVar = ternary(function(){ return 1 > 4; }, function(){ return 15; }, function() { return 42; }).ret();
 
@@ -98,7 +98,7 @@ var myVar = sw("Rainbow", {
     green: "Greenish",
     blue: "Blueish",
     default: "Some color"
-});
+}).ret();
 
 // myVar is "Some color"
 ```
@@ -111,7 +111,7 @@ var myVar = sw("Rainbow", [
     function() { return "green"; }, function() { return "Random green"; },
     function() { return "blue"; }, "Blueish",
     function() { return "Some color"; } // our default
-});
+}).ret();
 
 // myVar is "Some color"
 ```

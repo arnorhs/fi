@@ -1,6 +1,6 @@
 {
   "name": "fi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Javascript library for writing, chaining and using conditional statements in a functional way",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,14 @@
   "keywords": [
     "ternary",
     "operator",
+    "if",
+    "statement",
+    "condition",
+    "conditional",
+    "conditionals",
+    "else",
+    "switch",
+    "case",
     "callback"
   ],
   "devDependencies": {

@@ -44,18 +44,18 @@ statement.prototype.value = statement.prototype.ret = function() {
     }
 }
 
-function sw(val, obj) {
+function sw(cond, obj) {
     if (Array.isArray(obj)) {
-        return arrSw(val, obj);
+        return arrSw(cond, obj);
     }
-    return objSw(val, obj);
+    return objSw(cond, obj);
 }
 
-function arrSw(val, arr) {
+function arrSw(cond, arr) {
     var l = arr.length;
-    var val = retOrCall(val);
+    var cond = retOrCall(cond);
     for (var i = 0; i < l-1; i += 2) {
-        if (val === retOrCall(arr[i])) {
+        if (cond === retOrCall(arr[i])) {
             return retOrCall(arr[i+1]);
         }
     }
@@ -63,11 +63,11 @@ function arrSw(val, arr) {
     return ternary(l % 2, arr[l - 1]).ret();
 }
 
-function objSw(val, obj) {
+function objSw(cond, obj) {
     if (Object.keys(obj).length === 0) {
         return;
     }
-    var ret = retOrCall(obj[val]);
+    var ret = retOrCall(obj[cond]);
     if (typeof ret === 'undefined') {
         ret = retOrCall(obj['default'])
     }

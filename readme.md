@@ -83,7 +83,7 @@ Ternary operator:
 ```javascript
 var sw = require('fi').ternary;
 
-var myVar = ternary(function(){ return 1 > 4; }, function(){ return 15; }, function() { return 42; });
+var myVar = ternary(function(){ return 1 > 4; }, function(){ return 15; }, function() { return 42; }).ret();
 
 // myVar is 42
 ```

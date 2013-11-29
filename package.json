@@ -1,6 +1,6 @@
 {
   "name": "fi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Javascript library for writing, chaining and using conditional statements in a functional way",
   "main": "index.js",
   "scripts": {
